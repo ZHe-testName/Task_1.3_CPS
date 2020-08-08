@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border-color:  #F8F8F8;
+}
+
+/* HEADER */
+
+
+.header{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.header__button--burger{
+    margin: auto;
+    background: url("../img/header-imgs/burger.svg");
+}
+
+.header__button--tools{
+    background: url("../img/header-imgs/checkstatus.svg");
+}
+
+.header__button--search{
+    background: url("../img/header-imgs/repair.svg");
+}
+
+.burger{
+    flex-basis: 80px;
+    display: flex;
+}
+
+.tools-block{
+    flex-basis: 130px;
+    display: flex;
+    justify-content: space-around;
+    border-left: 2px solid #EAEAEA;
+    margin-left: 20px;
+}
+
+.logo{
+    flex-grow: 1;
+}
+
+.logo__img{
+    background-color: #fff;
+    margin: 15px 0;
+}
