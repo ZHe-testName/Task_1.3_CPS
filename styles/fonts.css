@@ -1,8 +1,8 @@
 @font-face{
-   font-family: 'TTLakes-Demibold'; 
-   src: url(../fonts/TTLakesCondensed-DemiBold.ttf);
-   src: url(../fonts/TTLakesCondensed-DemiBold.eot);
-   src: url(../fonts/TTLakesCondensed-DemiBold.woff);
+   font-family: 'TTLakes-Exlight'; 
+   src: url(../fonts/TTLakes-ExtraLight.ttf);
+   src: url(../fonts/TTLakes-ExtraLight.eot);
+   src: url(../fonts/TTLakes-ExtraLight.woff);
    font-weight: normal;
    font-style: normal;
 }
