@@ -85,6 +85,12 @@ body{
     }
 }
 
+@media(min-width: 1120px){
+    .header{
+        display: none;
+    }
+}
+
 /* SECTION SERVICES */
 
 
@@ -96,6 +102,10 @@ body{
 .service__header{
     padding: 20px 0;
     font-family: 'TTLakes-Bold';
+}
+
+.service__buttons-block{
+    display: none;
 }
 
 .services__text{
@@ -179,9 +189,43 @@ body{
         padding-top: 0;
     }
 
+    .services__par-text{
+        font-size: 1.1rem;
+    }
+
     .srevices__img{
         flex-basis: 50%;
         align-self: flex-start;
         border-radius: 15px;
+    }
+}
+
+
+@media(min-width: 1120px){
+    .service__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service__buttons-block{
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 30%;
+    }
+
+    .header-button--service-bth{
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-button--service-txt{
+        font-family: 'TTLakes-Regular';
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin-right: 10px;
+        letter-spacing: 1px;
     }
 }
