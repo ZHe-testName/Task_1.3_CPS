@@ -43,24 +43,23 @@ body{
 
 .burger__header-button--menu{
     margin: auto;
-    /* background: url("../img/header-imgs/burger.svg"); */
+}
+
+.buttons-block{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .tools-block{
     flex-basis: 130px;
-    display: flex;
-    justify-content: space-evenly;
     border-left: 2px solid #EAEAEA;
     margin-left: 30px;
 }
 
-/* .tools-block__header-button--tools{
-    background: url("../img/header-imgs/checkstatus.svg");
-} */
-
-/* .tools-block__header-button--search{
-    background: url("../img/header-imgs/repair.svg");
-} */
+.conect-us{
+    display: none;
+    flex-basis: 180px;
+}
 
 .logo{
     flex-grow: 1;
@@ -71,12 +70,27 @@ body{
     margin: 10px 0;
 }  
 
+@media(min-width: 768px){
+    .burger{
+        border-right: 2px solid #EAEAEA;
+        margin-right: 15px;
+    }
+
+    .tools-block{
+        margin: 0;
+    }
+
+    .conect-us{
+        display: flex;
+    }
+}
 
 /* SECTION SERVICES */
 
 
 .services{
     background-color: #F8F8F8;
+    overflow: hidden;
 }
 
 .service__header{
@@ -90,11 +104,11 @@ body{
 }
 
 .services-slider{
+    /* position: absolute;
+    left: 0; */
     display: flex;
-    /* justify-content: space-around; */
     margin-bottom: 15px;
     padding: 0 10px;
-    overflow-x: hidden;
 }
 
 .services-slider__item{
@@ -114,9 +128,13 @@ body{
 }
 
 .services__par-block{
-    height: 20vh;
-    overflow-y: hidden;
     padding: 20px;
+    margin-top: 20px;
+}
+
+.services__par-text{
+    height: 17vh;
+    overflow-y: hidden;
 }
 
 .services-button{
@@ -144,5 +162,26 @@ body{
     min-height: 35vh;
     background-image: url(../img/section-imgs/_MG_3223.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+}
+
+@media(min-width: 660px){
+    .services-description{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .services__par-block{
+        flex-basis: 50%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .srevices__img{
+        flex-basis: 50%;
+        align-self: flex-start;
+        border-radius: 15px;
+    }
 }
