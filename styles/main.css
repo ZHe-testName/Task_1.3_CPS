@@ -1,3 +1,5 @@
+@import url(./fonts.css);
+
 html{
     box-sizing: border-box;
 }
@@ -9,8 +11,10 @@ html{
 }
 
 body{
-    border-color:  #F8F8F8;
+    font-family: 'TTLakes-Regular';
+    letter-spacing: 1px;
 }
+
 
 /* HEADER */
 
@@ -20,9 +24,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid #e8faf7;
 }
 
-.header__button{
+.header-button{
+    cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -30,31 +36,31 @@ body{
     border: none;
 }
 
-.header__button--burger{
-    margin: auto;
-    background: url("../img/header-imgs/burger.svg");
-}
-
-.header__button--tools{
-    background: url("../img/header-imgs/checkstatus.svg");
-}
-
-.header__button--search{
-    background: url("../img/header-imgs/repair.svg");
-}
-
 .burger{
     flex-basis: 80px;
     display: flex;
 }
 
+.burger__header-button--menu{
+    margin: auto;
+    /* background: url("../img/header-imgs/burger.svg"); */
+}
+
 .tools-block{
     flex-basis: 130px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-left: 2px solid #EAEAEA;
-    margin-left: 20px;
+    margin-left: 30px;
 }
+
+/* .tools-block__header-button--tools{
+    background: url("../img/header-imgs/checkstatus.svg");
+} */
+
+/* .tools-block__header-button--search{
+    background: url("../img/header-imgs/repair.svg");
+} */
 
 .logo{
     flex-grow: 1;
@@ -62,5 +68,23 @@ body{
 
 .logo__img{
     background-color: #fff;
-    margin: 15px 0;
+    margin: 10px 0;
+}  
+
+
+/* SECTION SERVICES */
+
+
+.services{
+    background-color: #F8F8F8;
+}
+
+.service__header{
+    padding: 15px 0;
+    font-family: 'TTLakes-Bold';
+}
+
+.services__text{
+    padding-left: 15px;
+    border-left: 3px solid #41F6D7;
 }

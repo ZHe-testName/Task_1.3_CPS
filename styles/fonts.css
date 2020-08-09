@@ -1,0 +1,27 @@
+@font-face{
+   font-family: 'TTLakes-Demibold'; 
+   src: url(../fonts/TTLakesCondensed-DemiBold.ttf);
+   src: url(../fonts/TTLakesCondensed-DemiBold.eot);
+   src: url(../fonts/TTLakesCondensed-DemiBold.woff);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face{
+    font-family: 'TTLakes-Bold';
+    src: url(../fonts/TTLakesCondensed-ExtraBold.ttf);
+    src: url(../fonts/TTLakesCondensed-ExtraBold.eot);
+    src: url(../fonts/TTLakesCondensed-ExtraBold.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'TTLakes-Regular';
+    src: url(../fonts/TTLakesCondensed-Regular.ttf);
+    src: url(../fonts/TTLakesCondensed-Regular.eot);
+    src: url(../fonts/TTLakesCondensed-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
