@@ -36,6 +36,11 @@ body{
     border: none;
 }
 
+.header-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 2px #e698bf;
+}
+
 .burger{
     flex-basis: 80px;
     display: flex;
@@ -114,11 +119,10 @@ body{
 }
 
 .services-slider{
-    /* position: absolute;
-    left: 0; */
     display: flex;
     margin-bottom: 15px;
     padding: 0 10px;
+    overflow-x: auto;
 }
 
 .services-slider__item{
