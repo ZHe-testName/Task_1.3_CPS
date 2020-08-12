@@ -184,7 +184,7 @@ body{
 .srevices__img{
     width: 100%;
     min-height: 35vh;
-    background-image: url(../img/section-imgs/_MG_3223.jpg);
+    background-image: url('../img/section-imgs/_MG_3223.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
