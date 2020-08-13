@@ -26,6 +26,13 @@ body{
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid #e8faf7;
+    padding: 5px;
+}
+
+@media(min-width: 1120px){
+    .header{
+        display: none;
+    }
 }
 
 .header-button{
@@ -35,7 +42,7 @@ body{
     border-radius: 50%;
     outline: none;
     border: none;
-    margin: 0 10px 0 10px;
+    margin: 0 10px;
 }
 
 .header-button:hover{
@@ -53,8 +60,20 @@ body{
     margin-left: 30px;
 }
 
+@media(min-width: 768px){
+    .tools-block{
+        margin: 0;
+    }
+}
+
 .conect-us{
     display: none;
+}
+
+@media(min-width: 768px){
+    .conect-us{
+        display: flex;
+    }
 }
 
 .logo{
@@ -71,21 +90,8 @@ body{
         border-right: 2px solid #EAEAEA;
         margin-right: 15px;
     }
-
-    .tools-block{
-        margin: 0;
-    }
-
-    .conect-us{
-        display: flex;
-    }
 }
 
-@media(min-width: 1120px){
-    .header{
-        display: none;
-    }
-}
 
 /* SECTION SERVICES */
 
@@ -100,8 +106,25 @@ body{
     font-family: 'TTLakes-Bold';
 }
 
+@media(min-width: 1120px){
+    .service__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .service__buttons-block{
     display: none;
+}
+
+@media(min-width: 1120px){
+    .service__buttons-block{
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 35%;
+    }
+
 }
 
 .services__text{
@@ -113,6 +136,13 @@ body{
     display: flex;
     margin-bottom: 15px;
     padding: 0 10px;
+}
+
+@media(min-width: 1120px){
+    .services-slider{
+        overflow-x: scroll;
+    }
+
 }
 
 .services-slider__item{
@@ -141,38 +171,51 @@ body{
     margin-top: 20px;
 }
 
+@media(min-width: 660px){
+    .services__par-block{
+        flex-basis: 50%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
 .services__par-text{
     height: 17vh;
     overflow-y: hidden;
 }
 
-.services-button{
-    margin-top: 10px;
+@media(min-width: 660px){
+    .services__par-text{
+        font-size: 1.1rem;
+    }
 }
 
-.services-button__readmore-button{
-    display: flex;
+.services__readmore-wrap{
+    margin-top: 10px;
+    background: url("../img/section-imgs/expand.svg") no-repeat left;
+}
+
+.services__readmore-button{
     cursor: pointer;
-    justify-content: space-between;
-    align-items: center;
+    text-align: right;
     border: none;
     background-color: transparent;
     padding: 7px;
     font-size: 15px;
     font-weight: lighter;
-}
-
-.services-button__arrows{
-    border-radius: 3px;
-    margin-right: 5px;
-}
-
-.services-button__readmore-button:hover .services-button__arrows{
-    background-color: rgb(68, 68, 68);
+    margin-left: 20px;
 }
 
 .srevices__img{
     width: 100%;
+}
+
+@media(min-width: 660px){
+    .srevices__img{
+        flex-basis: 50%;
+        align-self: flex-start;
+        border-radius: 15px;
+    }
 }
 
 .services__img--picture{
@@ -181,51 +224,31 @@ body{
     border-radius: 10px;
 }
 
+
 @media(min-width: 660px){
     .services-description{
         display: flex;
         flex-wrap: wrap;
         padding: 15px;
     }
-
-    .services__par-block{
-        flex-basis: 50%;
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    .services__par-text{
-        font-size: 1.1rem;
-    }
-
-    .srevices__img{
-        flex-basis: 50%;
-        align-self: flex-start;
-        border-radius: 15px;
-    }
 }
 
 
 @media(min-width: 1120px){
-    .service__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .service__buttons-block{
-        display: flex;
-        justify-content: space-evenly;
-        flex-basis: 35%;
-    }
-
-    .header-button--service-bth{
-        display: flex;
+    .service-wide-bth{
         padding: 4px;
-        align-items: center;
         cursor: pointer;
         border: none;
         background-color: transparent;
+    }
+
+    .service-wide-bth--repair-img{
+        background: url("../img/header-imgs/repair.svg") no-repeat right;
+    }
+
+    .service-wide-bth--checkstatus-img{
+        background: url("../img/header-imgs/checkstatus.svg") no-repeat right;
+        margin-right: 15px;
     }
 
     .header-button--service-bth:hover{
@@ -234,10 +257,11 @@ body{
     }
 
     .header-button--service-txt{
+        display: block;
         font-family: 'TTLakes-Regular';
         font-size: 15px;
         font-weight: bolder;
-        margin-right: 10px;
+        margin:15px 45px 15px 0;
         letter-spacing: 1px;
     }
 }
