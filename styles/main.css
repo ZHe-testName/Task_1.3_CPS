@@ -27,6 +27,7 @@ body{
     align-items: center;
     border-bottom: 2px solid #e8faf7;
     padding: 5px;
+    background-color: #fff;
 }
 
 @media(min-width: 1120px){
@@ -43,6 +44,31 @@ body{
     outline: none;
     border: none;
     margin: 0 10px;
+}
+
+.burger-bg{
+    background: url("../img/header-imgs/burger.svg") no-repeat center;
+}
+
+.call-bg{
+    background: url("../img/header-imgs/call.svg") no-repeat center;
+}
+
+.chat-bg{
+    background: url("../img/header-imgs/chat.svg") no-repeat center;
+
+}
+
+.profile-bg{
+    background: url("../img/header-imgs/profile.svg") no-repeat center;
+}
+
+.repair-bg{
+    background: url("../img/header-imgs/repair.svg") no-repeat center;
+}
+
+.checkstatus-bg{
+    background: url("../img/header-imgs/checkstatus.svg") no-repeat center;
 }
 
 .header-button:hover{
@@ -95,13 +121,13 @@ body{
 
 /* SECTION SERVICES */
 
-
-.services{
-    background-color: #F8F8F8;
+.menu-navigation,.services{
     overflow: hidden;
+    background-color: #F8F8F8;
 }
 
 .service__header{
+    background-color: #F8F8F8;
     padding: 20px 0;
     font-family: 'TTLakes-Bold';
 }
@@ -114,17 +140,16 @@ body{
     }
 }
 
-.service__buttons-block{
+.service-wide-bth{
     display: none;
 }
 
 @media(min-width: 1120px){
-    .service__buttons-block{
-        display: flex;
-        justify-content: space-evenly;
-        flex-basis: 35%;
+    .service-wide-bth{
+        display: block;
+        padding: 4px;
+        margin-right: 15px;
     }
-
 }
 
 .services__text{
@@ -164,6 +189,11 @@ body{
 .services-slider__item--active{
     background-color: #fff;
     border: 2px solid #99eee0;
+}
+
+.services-slider__text{
+    text-decoration: none;
+    color: black;
 }
 
 .services__par-block{
@@ -224,6 +254,26 @@ body{
     border-radius: 10px;
 }
 
+.comments{
+    display: none;
+}
+
+@media(min-width: 1120px){
+    .comments{
+        display: block;
+    }
+
+    .comments__link{
+        text-decoration: none;
+        color: black;
+        margin-left: 35px;
+    }
+
+    .comments__link:hover{
+        text-decoration: underline;
+    }
+}
+
 
 @media(min-width: 660px){
     .services-description{
@@ -235,20 +285,19 @@ body{
 
 
 @media(min-width: 1120px){
-    .service-wide-bth{
-        padding: 4px;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-    }
-
     .service-wide-bth--repair-img{
+        border: none;
+        cursor: pointer;
+        padding: 0 5px;
+        margin-right: 15px;
         background: url("../img/header-imgs/repair.svg") no-repeat right;
     }
 
     .service-wide-bth--checkstatus-img{
+        padding: 0 5px;
+        border: none;
+        cursor: pointer;
         background: url("../img/header-imgs/checkstatus.svg") no-repeat right;
-        margin-right: 15px;
     }
 
     .header-button--service-bth:hover{
