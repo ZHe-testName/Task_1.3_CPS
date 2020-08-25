@@ -2,9 +2,10 @@
 
 .main-menu{
     max-width: 320px;
-    height: 100vh;
+    /* height: 100%; */
     background-color: #fff;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    font-weight: normal;
 }
 
 /* Main Menu Header */
@@ -28,18 +29,71 @@
 }
 
 .mm-list__item{
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .mm-list__link{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 10px 0;
     text-decoration: none;
     color: #1B1C21;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 25px;
+}
+
+.mm-list__link::after{
+    position: absolute;
+    top: 30px;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: rgb(110, 108, 108);
+    transform: translateX(-120%);
+    transition: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.mm-list__item:hover > .mm-list__link::after{
+    transform: translateX(0);
+    transition: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
 }
 
 .mm-list__link--active{
     color: #7E7E82;
     border-left: 4px solid #41F6D7;
+}
+
+/* Contact Block Styles */
+
+.mm-contacts-block{
+    margin-top: 100px;
+    padding-left: 10px;
+}
+
+.email-wrap,
+.phone-wrap{
+    margin-top: 10px;
+}
+
+.email,
+.phone{
+    margin: 10px;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: bold;
+    color: inherit;
+}
+
+.phone{
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    font-size: 24px;
+    line-height: 32px;
 }
