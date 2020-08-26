@@ -10,7 +10,7 @@
     <nav class="main-menu">
         <div class="mm-header-block">
             <div class="mm-btn-wrap">
-                <button class="header-button"></button>
+                <button class="header-button close-bg"></button>
             </div>
             <!-- /.close -->
             <div class="logo">
@@ -85,11 +85,11 @@
         <!-- /.mm-item-list -->
         <div class="mm-contacts-block">
             <div class="mm-conect-us">
-                <button class="header-button chat-bg"></button>
+                <button class="header-button chat-bg header-button--mm-mode"></button>
                 <!-- /.header-button -->
-                <button class="header-button call-bg"> </button>
+                <button class="header-button call-bg header-button--mm-mode"> </button>
                 <!-- /.header-button -->
-                <button class="header-button profile-bg"></button>
+                <button class="header-button profile-bg header-button--mm-mode"></button>
                 <!-- /.header-button -->
             </div>
             <!-- /.mm-conect-us -->
@@ -109,8 +109,19 @@
             <!-- /.phone-wrap -->
         </div>
         <!-- /.mm-contacts-block -->
-        <div class="mm-language-swicher"></div>
-        <!-- /.mm-language-swicher -->
+        <div class="mm-lang-swicher">
+            <div class="radio-block">
+                <input id="rus" type="radio" name="lang-btn" checked>
+                <label for="rus" class="lang-label">RU</label>
+
+                <input id="eng" type="radio" name="lang-btn">
+                <label for="eng" class="lang-label">EN</label>
+                
+                <input id="chz" type="radio" name="lang-btn">
+                <label for="chz" class="lang-label">CH</label>      
+            </div>
+        </div>
+        <!-- /.mm-lang-swicher -->
     </nav>
 </body>
 </html>

@@ -47,6 +47,11 @@ body{
     margin: 0 10px;
 }
 
+
+.header-button--mm-mode{
+    margin: 0 5px;
+}
+
 .burger-bg{
     background: url("../img/header-imgs/burger.svg") no-repeat center;
 }
