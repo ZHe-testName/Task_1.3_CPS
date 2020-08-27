@@ -61,7 +61,7 @@
     background-color: rgb(14, 13, 13);
     transform: translateX(-120%);
     transition: transform;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
 
@@ -73,7 +73,7 @@
     transform: translateX(0);
     background-color: rgb(197, 197, 197);
     transition: transform, background-color;
-    transition-duration: 0.4s, 0.5s;
+    transition-duration: 0.3s, 0.5s;
     transition-timing-function: ease-out;
 }
 
@@ -145,7 +145,7 @@
 .email:hover::after,
 .phone:hover::after{
     animation: faststik;
-    animation-duration: 0.6s;
+    animation-duration: 0.4s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
