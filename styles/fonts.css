@@ -1,17 +1,17 @@
 @font-face{
    font-family: 'TTLakes-Exlight'; 
-   src: url(../fonts/TTLakes-ExtraLight.ttf);
-   src: url(../fonts/TTLakes-ExtraLight.eot);
-   src: url(../fonts/TTLakes-ExtraLight.woff);
+   src: url(../fonts/TTLakes-ExtraLight.ttf),
+        url(../fonts/TTLakes-ExtraLight.eot),
+        url(../fonts/TTLakes-ExtraLight.woff);
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face{
     font-family: 'TTLakes-Bold';
-    src: url(../fonts/TTLakesCondensed-ExtraBold.ttf);
-    src: url(../fonts/TTLakesCondensed-ExtraBold.eot);
-    src: url(../fonts/TTLakesCondensed-ExtraBold.woff);
+    src: url(../fonts/TTLakesCondensed-ExtraBold.ttf),
+        url(../fonts/TTLakesCondensed-ExtraBold.eot),
+        url(../fonts/TTLakesCondensed-ExtraBold.woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -19,9 +19,18 @@
 
 @font-face{
     font-family: 'TTLakes-Regular';
-    src: url(../fonts/TTLakesCondensed-Regular.ttf);
-    src: url(../fonts/TTLakesCondensed-Regular.eot);
-    src: url(../fonts/TTLakesCondensed-Regular.woff);
+    src: url(../fonts/TTLakesCondensed-Regular.ttf),
+        url(../fonts/TTLakesCondensed-Regular.eot),
+        url(../fonts/TTLakesCondensed-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'TTLakes-Medium';
+    src: url(../fonts/TTLakes-Medium.ttf),
+        url(../fonts/TTLakes-Medium.eot),
+        url(../fonts/TTLakes-Medium.woff);
     font-weight: normal;
     font-style: normal;
 }

@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-family: 'TTLakes-Regular';
+    font-family: 'TTLakes-Medium';
     letter-spacing: 1px;
     max-width: 1120px;
 }
@@ -44,37 +44,42 @@ body{
     border-radius: 50%;
     outline: none;
     border: none;
+}
+
+
+.basic-button--menu-mode{
+    margin: 0 8px;
+}
+
+.basic-button--burger-bg{
+    background: url("../img/header-imgs/burger.svg") no-repeat center;
     margin: 0 10px;
 }
 
-
-.basic-button--mm-mode{
-    margin: 0 5px;
-}
-
-.burger-bg{
-    background: url("../img/header-imgs/burger.svg") no-repeat center;
-}
-
-.call-bg{
+.basic-button--call-bg{
     background: url("../img/header-imgs/call.svg") no-repeat center;
+    margin: 0 10px;
 }
 
-.chat-bg{
+.basic-button--chat-bg{
     background: url("../img/header-imgs/chat.svg") no-repeat center;
+    margin: 0 10px;
 
 }
 
-.profile-bg{
+.basic-button--profile-bg{
     background: url("../img/header-imgs/profile.svg") no-repeat center;
+    margin: 0 10px;
 }
 
-.repair-bg{
+.basic-button--repair-bg{
     background: url("../img/header-imgs/repair.svg") no-repeat center;
+    margin: 0 10px;
 }
 
-.checkstatus-bg{
+.basic-button--checkstatus-bg{
     background: url("../img/header-imgs/checkstatus.svg") no-repeat center;
+    margin: 0 10px;
 }
 
 .basic-button:hover{
