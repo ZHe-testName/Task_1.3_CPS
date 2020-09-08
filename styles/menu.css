@@ -1,8 +1,10 @@
 /* Main Menu Styles */
 
 .main-menu{
+    display: flex;
+    flex-direction: column;
     max-width: 320px;
-    /* height: 100%; */
+    min-height: 100vh;
     background-color: #fff;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     font-weight: normal;
@@ -14,15 +16,13 @@
 /* Main Menu Header */
 
 .mm-header-block{
-    position: fixed;
-    z-index: 100;
     width: 320px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .search-bg{
@@ -36,8 +36,8 @@
 /* Main Menu List */
 
 .mm-list{
+    flex-grow: 1;
     list-style: none;
-    padding-top: 90px;
 }
 
 .mm-list__link{
@@ -85,7 +85,7 @@
 /* Contact Block Styles */
 
 .mm-contacts-block{
-    margin-top: 100px;
+    margin-top: 40px;
     padding-left: 10px;
 }
 

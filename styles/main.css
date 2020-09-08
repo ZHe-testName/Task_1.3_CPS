@@ -37,7 +37,7 @@ body{
     }
 }
 
-.header-button{
+.basic-button{
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -48,7 +48,7 @@ body{
 }
 
 
-.header-button--mm-mode{
+.basic-button--mm-mode{
     margin: 0 5px;
 }
 
@@ -77,7 +77,7 @@ body{
     background: url("../img/header-imgs/checkstatus.svg") no-repeat center;
 }
 
-.header-button:hover{
+.basic-button:hover{
     transform: scale(1.1);
     box-shadow: 0 0 5px 2px #e698bf;
 }
