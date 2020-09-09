@@ -21,3 +21,77 @@
     margin: 15px 0px 15px 31px;
 }
 
+/* Repair Main Styles */
+
+
+.repair-main{
+    border: 1px solid transparent;
+}
+
+.repair-cards{
+    display: flex;
+    justify-content: flex-start;
+    margin: 24px 0px 40px 32px;
+    overflow: hidden;
+}
+
+@media(min-width: 768px){
+    .repair-cards{
+        flex-wrap: wrap;
+        /* height: 170px; */
+        margin-bottom: 15px;
+    }
+}
+
+.repair-cards__button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-width: 240px;
+    height: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: url(../img/repair-imgs/go.svg) 90% no-repeat ;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+@media(min-width: 768px){
+    .repair-cards__button{
+        min-width: 220px;
+    }
+}
+
+@media(min-width: 1120px){
+    .repair-cards__button{
+        min-width: 240px;
+    }
+}
+
+.repair-cards__img{
+    display: block;
+    margin-left: 15px;
+    background-color: #fff;
+}
+
+.repair-cards__img--cliped{
+    clip-path: ellipse(120px 50px at 0px 0px);
+}
+
+.services__readmore-wrap--repair-mode{
+    display: none;
+}
+
+.spacer{
+    visibility: hidden;
+}
+
+
+@media(min-width: 768px){
+    .services__readmore-wrap--repair-mode{
+        display: block;
+        margin-left: 32px;
+        margin-bottom: 20px;
+    }
+}
