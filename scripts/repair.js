@@ -1,7 +1,6 @@
 'use strict';
 
-const repairMain = document.querySelector('.repair-main'),
-    head = document.querySelector('head'),
+const head = document.querySelector('head'),
     cardsBlock = document.querySelector('.repair-cards'),
     showBtn = document.querySelector('#repairShowBtn');
 
@@ -23,7 +22,6 @@ if (document.documentElement.clientWidth < 321) {
             type: 'bullets'
         }
     });
-    console.log('done');
 }
 
 showBtn.addEventListener('click', () => {
