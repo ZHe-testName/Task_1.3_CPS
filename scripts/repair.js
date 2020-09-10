@@ -1,17 +1,30 @@
 'use strict';
 
-const showBtn = document.querySelector('#repairShowBtn'),
-    cardsBlock = document.querySelector('.repair-cards');
+const repairMain = document.querySelector('.repair-main'),
+    head = document.querySelector('head'),
+    cardsBlock = document.querySelector('.repair-cards'),
+    showBtn = document.querySelector('#repairShowBtn');
 
-const swiper = new Swiper('.swiper-container', {
-    loop: false,
-    slidesPerView: 1
+if (document.documentElement.clientWidth < 321) {
+    //create link to slider style-shield
+    let styleLink = document.createElement('link');
+    styleLink.setAttribute('rel', 'stylesheet');
+    styleLink.setAttribute('href', 'https://unpkg.com/swiper/swiper-bundle.css');
 
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     type: 'bullets'
-    // }
-});
+    head.appendChild(styleLink);
+
+    //swiper init
+    const swiper = new Swiper('.swiper-container', {
+        loop: false,
+        slidesPerView: 1,
+    
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+        }
+    });
+    console.log('done');
+}
 
 showBtn.addEventListener('click', () => {
     cardsBlock.classList.toggle('repair-cards--show-all');

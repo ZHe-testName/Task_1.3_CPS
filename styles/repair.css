@@ -31,27 +31,47 @@
 }
 
 .repair-cards{
-    display: flex;
-    justify-content: space-between;
-    margin: 24px 20px 40px 32px;
+    margin: 24px 20px 40px 20px;
 }
 
 
-@media(min-width: 768px){
+
+
+@media(min-width: 321px){
 
     .repair-cards{
+        display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         height: 150px;
         margin-bottom: 15px;
         transition: height;
-        transition-duration: 1s;
+        transition-duration: 0.7s;
         transition-timing-function: ease-in;
     }
 
     .repair-cards--show-all{
-        height: 330px;
+        height: 820px;
         transition: height;
-        transition-duration: 1s;
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in;
+    }
+}
+
+@media(min-width: 513px){
+    .repair-cards--show-all{
+        height: 480px;
+        transition: height;
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in;
+    }
+}
+
+@media(min-width: 984px){
+    .repair-cards--show-all{
+        height: 280px;
+        transition: height;
+        transition-duration: 0.7s;
         transition-timing-function: ease-in;
     }
 }
@@ -60,8 +80,8 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    min-width: 220px !important;
-    height: 70px;
+    width: 90% !important;
+    height: 70px !important;
     margin-right: 15px;
     margin-bottom: 15px;
     background: url(../img/repair-imgs/go.svg) 90% no-repeat ;
@@ -70,7 +90,7 @@
     border-radius: 6px;
 }
 
-@media(min-width: 768px){
+@media(min-width: 321px){
     .repair-cards__button{
         width: 220px !important;
     }
@@ -101,7 +121,7 @@
 }
 
 
-@media(min-width: 768px){
+@media(min-width: 321px){
     .services__readmore-wrap--repair-mode{
         display: block;
         margin-left: 32px;
