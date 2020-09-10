@@ -26,24 +26,34 @@
 
 .repair-main{
     border: 1px solid transparent;
+    position: relative;
 }
 
 .repair-cards{
     display: flex;
-    justify-content: flex-start;
-    margin: 24px 0px 40px 32px;
+    justify-content: space-between;
+    margin: 24px 20px 40px 32px;
     overflow: hidden;
 }
 
 @media(min-width: 768px){
     .repair-cards{
         flex-wrap: wrap;
-        /* height: 170px; */
+        height: 170px;
         margin-bottom: 15px;
+        transition: height;
+        transition-duration: 1s;
+    }
+
+    .repair-cards--show-all{
+        height: 330px;
+        transition: height;
+        transition-duration: 1s;
     }
 }
 
 .repair-cards__button{
+    float: left;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -92,6 +102,6 @@
     .services__readmore-wrap--repair-mode{
         display: block;
         margin-left: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }

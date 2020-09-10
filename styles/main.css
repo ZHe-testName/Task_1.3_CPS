@@ -234,18 +234,30 @@ body{
 
 .services__readmore-wrap{
     margin-top: 10px;
-    background: url("../img/section-imgs/expand.svg") no-repeat left;
 }
 
 .services__readmore-button{
     cursor: pointer;
     text-align: right;
     border: none;
-    background-color: transparent;
+    border-radius: 3px;
+    background: url("../img/section-imgs/expand-up.svg") no-repeat left;
     padding: 7px;
     font-size: 15px;
     font-weight: lighter;
-    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.services__readmore-button:hover{
+    box-shadow: inset 0 0 3px 0 rgb(161, 161, 161);
+}
+
+.services__readmore-button:focus{
+    outline: none;
+}
+
+.services__readmore-button--active{
+    background: url("../img/section-imgs/expand-down.svg") no-repeat left;
 }
 
 .srevices__img{
