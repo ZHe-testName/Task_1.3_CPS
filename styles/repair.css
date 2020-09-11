@@ -51,7 +51,7 @@
     }
 
     .repair-cards--show-all{
-        height: 820px;
+        height: 850px;
         transition: height;
         transition-duration: 0.7s;
         transition-timing-function: ease-in;
@@ -60,10 +60,23 @@
 
 @media(min-width: 513px){
     .repair-cards--show-all{
-        height: 480px;
+        height: 500px;
         transition: height;
         transition-duration: 0.7s;
         transition-timing-function: ease-in;
+    }
+
+    .repair-cards__button:hover{
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px 0 rgb(184, 183, 183);
+        transition: transform;
+        transition-duration: 0.4s;
+    }
+
+    .repair-cards__button:hover>img{
+        margin-left: 12%;
+        transition: margin-left;
+        transition-duration: 0.5s;
     }
 }
 
@@ -88,6 +101,8 @@
     background-color: #fff;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
+    transition: transform;
+    transition-duration: 0.4s;
 }
 
 @media(min-width: 321px){
@@ -106,6 +121,8 @@
     display: block;
     margin-left: 15px;
     background-color: #fff;
+    transition: margin-left;
+    transition-duration: 0.5s;
 }
 
 .repair-cards__img--cliped{
@@ -116,9 +133,9 @@
     display: none;
 }
 
-.spacer{
+/* .spacer{
     visibility: hidden;
-}
+} */
 
 
 @media(min-width: 321px){
