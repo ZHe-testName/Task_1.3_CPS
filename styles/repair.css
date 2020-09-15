@@ -31,13 +31,13 @@
 }
 
 .repair-cards{
-    margin: 24px 20px 40px 20px;
+    margin: 24px 20px 40px 0px;
 }
 
 
 
 
-@media(min-width: 321px){
+@media(min-width: 560px){
 
     .repair-cards{
         display: flex;
@@ -45,6 +45,7 @@
         flex-wrap: wrap;
         height: 150px;
         margin-bottom: 15px;
+        margin-left: 20px;
         transition: height;
         transition-duration: 0.7s;
         transition-timing-function: ease-in;
@@ -58,7 +59,7 @@
     }
 }
 
-@media(min-width: 513px){
+@media(min-width: 560px){
     .repair-cards--show-all{
         height: 500px;
         transition: height;
@@ -95,7 +96,7 @@
     justify-content: start;
     width: 90% !important;
     height: 70px !important;
-    margin-right: 15px;
+    margin-right: 10%;
     margin-bottom: 15px;
     background: url(../img/repair-imgs/go.svg) 90% no-repeat ;
     background-color: #fff;
@@ -105,9 +106,10 @@
     transition-duration: 0.4s;
 }
 
-@media(min-width: 321px){
+@media(min-width: 560px){
     .repair-cards__button{
         width: 220px !important;
+        margin-right: 15px;
     }
 }
 
@@ -138,7 +140,7 @@
 } */
 
 
-@media(min-width: 321px){
+@media(min-width: 560px){
     .services__readmore-wrap--repair-mode{
         display: block;
         margin-left: 32px;

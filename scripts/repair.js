@@ -4,7 +4,7 @@ const head = document.querySelector('head'),
     cardsBlock = document.querySelector('.repair-cards'),
     showBtn = document.querySelector('#repairShowBtn');
 
-if (document.documentElement.clientWidth < 321) {
+if (document.documentElement.clientWidth < 560) {
     //create link to slider style-shield
     let styleLink = document.createElement('link');
     styleLink.setAttribute('rel', 'stylesheet');
