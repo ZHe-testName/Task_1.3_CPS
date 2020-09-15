@@ -1,6 +1,8 @@
 .repair{
     background-color: #F8F8F8;
     border: 1px solid transparent;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 /* Repaer Header Styles */
@@ -37,11 +39,11 @@
 
 
 
-@media(min-width: 560px){
+@media(min-width: 564px){
 
     .repair-cards{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
         height: 150px;
         margin-bottom: 15px;
@@ -51,21 +53,9 @@
         transition-timing-function: ease-in;
     }
 
-    .repair-cards--show-all{
-        height: 850px;
-        transition: height;
-        transition-duration: 0.7s;
-        transition-timing-function: ease-in;
-    }
 }
 
-@media(min-width: 560px){
-    .repair-cards--show-all{
-        height: 500px;
-        transition: height;
-        transition-duration: 0.7s;
-        transition-timing-function: ease-in;
-    }
+@media(min-width: 564px){
 
     .repair-cards__button:hover{
         transform: scale(1.1);
@@ -81,22 +71,11 @@
     }
 }
 
-@media(min-width: 984px){
-    .repair-cards--show-all{
-        height: 280px;
-        transition: height;
-        transition-duration: 0.7s;
-        transition-timing-function: ease-in;
-    }
-}
-
 .repair-cards__button{
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 90% !important;
     height: 70px !important;
-    margin-right: 10%;
     margin-bottom: 15px;
     background: url(../img/repair-imgs/go.svg) 90% no-repeat ;
     background-color: #fff;
@@ -106,16 +85,10 @@
     transition-duration: 0.4s;
 }
 
-@media(min-width: 560px){
-    .repair-cards__button{
-        width: 220px !important;
-        margin-right: 15px;
-    }
-}
-
-@media(min-width: 1120px){
+@media(min-width: 564px){
     .repair-cards__button{
         width: 240px !important;
+        margin-right: 20px;
     }
 }
 
@@ -135,12 +108,12 @@
     display: none;
 }
 
-/* .spacer{
+.spacer{
     visibility: hidden;
-} */
+}
 
 
-@media(min-width: 560px){
+@media(min-width: 564px){
     .services__readmore-wrap--repair-mode{
         display: block;
         margin-left: 32px;
